@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zoomin.secundino photography</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white pt-20">
+
+    <!-- Navigation -->
+    <nav class="bg-[#112a12] shadow-sm fixed w-full z-50 top-0">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex items-center py-2">
+                        <!-- Updated Logo SVG - Back to White -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" class="h-12">
+                            <!-- Camera Lens -->
+                            <circle cx="30" cy="30" r="25" fill="none" stroke="white" stroke-width="2"/>
+                            <circle cx="30" cy="30" r="18" fill="none" stroke="white" stroke-width="1.5"/>
+                            <circle cx="30" cy="30" r="12" fill="none" stroke="white" stroke-width="1"/>
+                            
+                            <!-- Globe with Walking Man -->
+                            <g transform="translate(30, 30) scale(0.4)">
+                                <!-- Globe -->
+                                <circle r="25" fill="none" stroke="white" stroke-width="3"/>
+                                <ellipse rx="25" ry="8" stroke="white" stroke-width="2" fill="none"/>
+                                <ellipse rx="25" ry="15" stroke="white" stroke-width="2" fill="none"/>
+                                
+                                <!-- Walking Man -->
+                                <g transform="translate(0, -5)">
+                                    <!-- Head -->
+                                    <circle cx="0" cy="-8" r="3" fill="white"/>
+                                    <!-- Body -->
+                                    <line x1="0" y1="-5" x2="0" y2="5" stroke="white" stroke-width="2"/>
+                                    <!-- Arms -->
+                                    <line x1="-5" y1="0" x2="5" y2="0" stroke="white" stroke-width="2"/>
+                                    <!-- Legs -->
+                                    <line x1="0" y1="5" x2="-4" y2="12" stroke="white" stroke-width="2"/>
+                                    <line x1="0" y1="5" x2="4" y2="12" stroke="white" stroke-width="2"/>
+                                </g>
+                            </g>
+                            
+                            <!-- Lens Reflection -->
+                            <circle cx="22" cy="22" r="3" fill="white" opacity="0.6"/>
+                            
+                            <!-- Text -->
+                            <text x="70" y="35" font-family="Arial" font-size="24" font-weight="bold" fill="white">
+                                zoomin
+                            </text>
+                            <text x="70" y="50" font-family="Arial" font-size="14" fill="white">
+                                secundino
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="#gallery" class="text-white hover:text-blue-600">gallery</a>
+                    <a href="#about" class="text-white hover:text-blue-600">about</a>
+                    <a href="#contact" class="text-white hover:text-blue-600">contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Large Logo (Stays Green) -->
+    <div class="flex justify-center my-16">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" class="h-32">
+            <!-- Camera Lens -->
+            <circle cx="30" cy="30" r="25" fill="none" stroke="#112a12" stroke-width="2"/>
+            <circle cx="30" cy="30" r="18" fill="none" stroke="#112a12" stroke-width="1.5"/>
+            <circle cx="30" cy="30" r="12" fill="none" stroke="#112a12" stroke-width="1"/>
+            
+            <!-- Globe with Walking Man -->
+            <g transform="translate(30, 30) scale(0.4)">
+                <!-- Globe -->
+                <circle r="25" fill="none" stroke="#112a12" stroke-width="3"/>
+                <ellipse rx="25" ry="8" stroke="#112a12" stroke-width="2" fill="none"/>
+                <ellipse rx="25" ry="15" stroke="#112a12" stroke-width="2" fill="none"/>
+                
+                <!-- Walking Man -->
+                <g transform="translate(0, -5)">
+                    <!-- Head -->
+                    <circle cx="0" cy="-8" r="3" fill="#112a12"/>
+                    <!-- Body -->
+                    <line x1="0" y1="-5" x2="0" y2="5" stroke="#112a12" stroke-width="2"/>
+                    <!-- Arms -->
+                    <line x1="-5" y1="0" x2="5" y2="0" stroke="#112a12" stroke-width="2"/>
+                    <!-- Legs -->
+                    <line x1="0" y1="5" x2="-4" y2="12" stroke="#112a12" stroke-width="2"/>
+                    <line x1="0" y1="5" x2="4" y2="12" stroke="#112a12" stroke-width="2"/>
+                </g>
+            </g>
+            
+            <!-- Lens Reflection -->
+            <circle cx="22" cy="22" r="3" fill="#112a12" opacity="0.6"/>
+            
+            <!-- Text -->
+            <text x="70" y="35" font-family="Arial" font-size="24" font-weight="bold" fill="#112a12">
+                zoomin
+            </text>
+            <text x="70" y="50" font-family="Arial" font-size="14" fill="#112a12">
+                secundino
+            </text>
+        </svg>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div id="gallery" class="px-4 max-w-4xl mx-auto pt-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-semibold text-[#112a12] mb-2">gallery</h2>
+            <div class="w-24 h-1 bg-[#112a12] mx-auto mb-8"></div>
+        </div>
+        <div class="grid grid-cols-1 gap-4">
+            <div class="aspect-square bg-white rounded-lg overflow-hidden">
+                <div class="w-full h-full flex items-center justify-center p-2">
+                    <img src="images/Screenshot 2024-10-09 110916.png" alt="FR24" class="rounded-lg max-w-full max-h-full object-contain">
+                </div>
+            </div>
+            <div class="aspect-square bg-white rounded-lg overflow-hidden">
+                <div class="w-full h-full flex items-center justify-center p-2">
+                    <img src="images/essere_come_tutti.jpeg" alt="Gallery Image" class="rounded-lg max-w-full max-h-full object-contain">
+                </div>
+            </div>
+            <div class="aspect-square bg-white rounded-lg overflow-hidden">
+                <div class="w-full h-full flex items-center justify-center p-2">
+                    <img src="images/bierchen.jpeg" alt="Gallery Image" class="rounded-lg max-w-full max-h-full object-contain">
+                </div>
+            </div>
+            <div class="aspect-square bg-white rounded-lg overflow-hidden">
+                <div class="w-full h-full flex items-center justify-center p-2">
+                    <img src="images/sad-happy-heart.jpeg" alt="Gallery Image" class="rounded-lg max-w-full max-h-full object-contain">
+                </div>
+            </div>
+            <div class="aspect-square bg-white rounded-lg overflow-hidden">
+                <div class="w-full h-full flex items-center justify-center p-2">
+                    <img src="images/pt.jpeg" alt="Gallery Image" class="rounded-lg max-w-full max-h-full object-contain">
+                </div>
+            </div>
+            <div class="aspect-square bg-white rounded-lg overflow-hidden">
+                <div class="w-full h-full flex items-center justify-center p-2">
+                    <img src="images/cafe.jpeg" alt="Gallery Image" class="rounded-lg max-w-full max-h-full object-contain">
+                </div>
+            </div>
+            <div class="aspect-square bg-white rounded-lg overflow-hidden">
+                 <div class="w-full h-full flex items-center justify-center p-2">
+                    <img src="images/fra-am-meer.jpeg" alt="Gallery Image" class="rounded-lg max-w-full max-h-full object-contain">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="py-16 px-4 max-w-2xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-semibold text-[#112a12] mb-2">about</h2>
+            <div class="w-24 h-1 bg-[#112a12] mx-auto mb-8"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="aspect-square">
+                <img src="images/pb_pic.jpeg" alt="Photographer Portrait" class="w-full h-full object-cover rounded-lg shadow-lg">
+            </div>
+            <div class="text-gray-600 space-y-4">
+                <p class="text-lg">this is @zoomin.secundino on web</p>
+                <div class="pt-4">
+                    <h3 class="font-semibold text-gray-800 mb-2">equipment</h3>
+                    <ul class="list-disc list-inside">
+                        <li>camera: samsung galaxy a21 zoom x2.5</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="py-16 px-4 max-w-2xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-semibold text-[#112a12] mb-2">contact</h2>
+            <div class="w-24 h-1 bg-[#112a12] mx-auto mb-8"></div>
+        </div>
+        <div class="grid grid-cols-1 gap-8">
+            <div class="text-center text-gray-600">
+                <p class="text-lg mb-4">Get in touch for collaborations or inquiries</p>
+                <div class="space-y-2">
+                    <p>Instagram: @zoomin.secundino</p>
+                </div>
+            </div>
+            <!-- Contact Form -->
+            <form class="space-y-4">
+                <div>
+                    <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                </div>
+                <div>
+                    <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                </div>
+                <div>
+                    <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-[#112a12] text-white py-2 px-4 rounded-lg hover:bg-[#112a12] transition duration-300">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
